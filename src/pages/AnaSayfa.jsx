@@ -59,8 +59,8 @@ export default function AnaSayfa() {
           <div className="featured-service">
             <div className="featured-service__image">
               <img
-                src="https://images.unsplash.com/photo-1693985120993-e9b203ce7631?w=900&q=85"
-                alt="Ev içi boya badana yapan profesyonel usta"
+                src="https://images.unsplash.com/photo-1511822148790-e7b58ba14c72?w=900&q=85"
+                alt="Ev içi duvar boyayan profesyonel ustalar"
                 loading="eager"
               />
             </div>

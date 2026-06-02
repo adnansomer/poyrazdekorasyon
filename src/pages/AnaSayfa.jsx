@@ -55,6 +55,33 @@ export default function AnaSayfa() {
             heading="Hizmetlerimiz"
             sub="Konutunuzdan işyerinize kadar tüm tadilat ve dekorasyon ihtiyaçlarınızda yanınızdayız."
           />
+          {/* Ücretsiz Keşif — Öne Çıkan Kart */}
+          <div className="featured-service">
+            <div className="featured-service__image">
+              <img
+                src="https://images.unsplash.com/photo-1558227691-41ea78d1f631?w=900&q=85"
+                alt="Profesyonel usta keşif hizmeti"
+                loading="eager"
+              />
+            </div>
+            <div className="featured-service__body">
+              <span className="featured-service__badge">Ücretsiz</span>
+              <h3 className="featured-service__title">Ücretsiz Keşif Hizmeti</h3>
+              <p className="featured-service__desc">
+                Projenizin detaylarını yerinde değerlendirmek için uzman ekibimizi ücretsiz olarak davet edin.
+                Türkiye'nin her yerine keşif yapabilir, ihtiyaçlarınıza özel fiyat teklifi sunabiliriz.
+              </p>
+              <ul className="featured-service__list">
+                <li>Yerinde ücretsiz teknik inceleme</li>
+                <li>Türkiye genelinde hizmet</li>
+                <li>Aynı gün fiyat teklifi</li>
+              </ul>
+              <Link to="/iletisim" className="btn btn-primary" style={{ alignSelf: 'flex-start' }}>
+                Keşif Talep Et →
+              </Link>
+            </div>
+          </div>
+
           <div className="services-grid">
             {services.map(service => (
               <ServiceCard key={service.id} service={service} />

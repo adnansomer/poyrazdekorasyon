@@ -29,15 +29,15 @@ export default function Footer() {
             <div className="footer__contact-list">
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">📞</span>
-                <span>05XX XXX XX XX</span>
+                <span>+90 545 209 65 57</span>
               </div>
               <div className="footer__contact-item">
-                <span className="footer__contact-icon">✉️</span>
-                <span>info@poyrazdekorasyon.com</span>
+                <span className="footer__contact-icon">📞</span>
+                <span>+90 506 178 31 49</span>
               </div>
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">📍</span>
-                <span>Örnek Mah., Dekorasyon Cad. No:12, İstanbul</span>
+                <span>Mevlana Mah. 1776/14 No:11, Bornova / İzmir</span>
               </div>
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">🕐</span>

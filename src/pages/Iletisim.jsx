@@ -31,20 +31,20 @@ const ClockIcon = () => (
 const contactItems = [
   {
     Icon: PhoneIcon,
-    label: 'Telefon',
-    value: '05XX XXX XX XX',
-    href: 'tel:05XXXXXXXXX',
+    label: 'Telefon 1',
+    value: '+90 545 209 65 57',
+    href: 'tel:+905452096557',
   },
   {
-    Icon: MailIcon,
-    label: 'E-posta',
-    value: 'info@poyrazdekorasyon.com',
-    href: 'mailto:info@poyrazdekorasyon.com',
+    Icon: PhoneIcon,
+    label: 'Telefon 2',
+    value: '+90 506 178 31 49',
+    href: 'tel:+905061783149',
   },
   {
     Icon: PinIcon,
     label: 'Adres',
-    value: 'Örnek Mahallesi, Dekorasyon Caddesi No:12\nİstanbul / Türkiye',
+    value: 'Mevlana Mahallesi 1776/14 No:11\nBornova / İzmir',
     href: null,
   },
   {

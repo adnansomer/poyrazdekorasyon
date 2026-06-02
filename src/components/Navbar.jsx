@@ -27,19 +27,47 @@ export default function Navbar() {
       <div className="container navbar__inner">
         <Link to="/" className="navbar__logo" onClick={closeMenu}>
           <span className="navbar__logo-mark" aria-hidden="true">
-            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="44" height="44" rx="10" fill="#e8a020"/>
+            <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="pd-bg" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#1e3d6b"/>
+                  <stop offset="100%" stopColor="#0d1e35"/>
+                </linearGradient>
+                <linearGradient id="pd-gold" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#f5c842"/>
+                  <stop offset="100%" stopColor="#d4890a"/>
+                </linearGradient>
+              </defs>
+              {/* Dış altıgen — altın çerçeve */}
+              <polygon
+                points="26,2 48,14.5 48,37.5 26,50 4,37.5 4,14.5"
+                fill="url(#pd-gold)"
+              />
+              {/* İç altıgen — koyu zemin */}
+              <polygon
+                points="26,6.5 43.5,16.5 43.5,35.5 26,45.5 8.5,35.5 8.5,16.5"
+                fill="url(#pd-bg)"
+              />
+              {/* Köşe aksanları */}
+              <polygon
+                points="26,6.5 43.5,16.5 43.5,35.5 26,45.5 8.5,35.5 8.5,16.5"
+                fill="none"
+                stroke="rgba(245,200,66,0.18)"
+                strokeWidth="1"
+              />
+              {/* PD yazısı */}
               <text
-                x="22"
-                y="30"
-                fontFamily="Georgia, 'Playfair Display', serif"
-                fontSize="18"
+                x="26"
+                y="32"
+                fontFamily="Georgia,'Times New Roman',serif"
+                fontSize="16"
                 fontWeight="700"
-                fill="#ffffff"
+                fill="url(#pd-gold)"
                 textAnchor="middle"
-                letterSpacing="-0.5"
+                letterSpacing="1.5"
               >PD</text>
-              <path d="M8 36 Q22 40 36 36" stroke="rgba(255,255,255,0.35)" strokeWidth="1.2" fill="none" strokeLinecap="round"/>
+              {/* Alt dekoratif çizgi */}
+              <line x1="18" y1="36" x2="34" y2="36" stroke="url(#pd-gold)" strokeWidth="0.8" strokeLinecap="round" opacity="0.6"/>
             </svg>
           </span>
           <span className="navbar__logo-text">

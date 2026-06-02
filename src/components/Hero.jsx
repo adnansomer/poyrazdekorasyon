@@ -39,9 +39,10 @@ export default function Hero() {
 
           <p className="hero__description">
             Poyraz Dekorasyon olarak; fayans döşemeden çatı izolasyonuna, boya
-            badanadan su tesisatına kadar eviniz ve işyerinizin tüm tadilat
-            ihtiyaçlarını deneyimli ekibimizle karşılıyoruz. Kalite, güven ve
-            zamanında teslim ilkemizden asla taviz vermiyoruz.
+            badanadan su tesisatına, ev içi dekorasyondan komple tadilata kadar
+            eviniz ve işyerinizin tüm ihtiyaçlarını deneyimli ekibimizle
+            karşılıyoruz. Kalite, güven ve zamanında teslim ilkemizden asla
+            taviz vermiyoruz.
           </p>
 
           <div className="hero__actions">

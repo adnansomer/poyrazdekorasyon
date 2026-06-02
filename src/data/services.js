@@ -30,6 +30,7 @@ export const services = [
     image:
       'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80',
     alt: 'Müstakil ev çatı izolasyonu',
+    imagePosition: 'center 12%',
   },
   {
     id: 'demir',

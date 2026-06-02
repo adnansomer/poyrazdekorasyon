@@ -1,8 +1,22 @@
-import { Link } from 'react-router-dom'
-import SectionTitle from '../components/SectionTitle'
+import { useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { services } from '../data/services'
 
 export default function Hizmetler() {
+  const { hash } = useLocation()
+
+  useEffect(() => {
+    if (hash) {
+      const id = hash.replace('#', '')
+      const el = document.getElementById(id)
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }, 80)
+      }
+    }
+  }, [hash])
+
   return (
     <>
       {/* Sayfa Başlığı */}
@@ -21,6 +35,7 @@ export default function Hizmetler() {
           {services.map((service, index) => (
             <div
               key={service.id}
+              id={service.id}
               className={`service-detail ${index % 2 !== 0 ? 'service-detail--reverse' : ''}`}
             >
               <div className="service-detail__image">
@@ -28,6 +43,7 @@ export default function Hizmetler() {
                   src={service.image}
                   alt={service.alt}
                   loading="lazy"
+                  style={{ objectPosition: service.imagePosition || 'center' }}
                 />
               </div>
               <div className="service-detail__content">

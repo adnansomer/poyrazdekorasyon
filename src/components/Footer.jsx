@@ -51,7 +51,6 @@ export default function Footer() {
           <p className="footer__copy">
             © {new Date().getFullYear()} <span>Poyraz Dekorasyon</span>. Tüm hakları saklıdır.
           </p>
-          <p className="footer__copy">İstanbul, Türkiye</p>
         </div>
       </div>
     </footer>

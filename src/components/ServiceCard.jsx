@@ -8,6 +8,7 @@ export default function ServiceCard({ service }) {
           src={service.image}
           alt={service.alt}
           loading="lazy"
+          style={{ objectPosition: service.imagePosition || 'center' }}
         />
       </div>
       <div className="service-card__body">
@@ -17,7 +18,7 @@ export default function ServiceCard({ service }) {
             ? service.description.slice(0, 110) + '…'
             : service.description}
         </p>
-        <Link to="/hizmetler" className="service-card__link">
+        <Link to={`/hizmetler#${service.id}`} className="service-card__link">
           Detaylı İncele &rarr;
         </Link>
       </div>

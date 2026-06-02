@@ -1259,6 +1259,10 @@ ul {
     grid-template-columns: 1fr 1fr;
   }
 
+  .about-values__grid {
+    grid-template-columns: 1fr;
+  }
+
   .contact-info-grid {
     grid-template-columns: 1fr;
   }

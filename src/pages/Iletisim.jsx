@@ -1,4 +1,5 @@
 import MapSection from '../components/MapSection'
+import PageHero from '../components/PageHero'
 
 const PhoneIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -57,14 +58,11 @@ const contactItems = [
 export default function Iletisim() {
   return (
     <>
-      <div className="page-hero">
-        <div className="container page-hero__inner">
-          <h1 className="page-hero__title">İletişim</h1>
-          <p className="page-hero__sub">
-            Projeniz için teklif almak veya bilgi edinmek için bize ulaşın.
-          </p>
-        </div>
-      </div>
+      <PageHero
+        title="İletişim"
+        sub="Projeniz için teklif almak veya bilgi edinmek için bize ulaşın."
+        illustration="contact"
+      />
 
       <section className="contact-info-section">
         <div className="container">

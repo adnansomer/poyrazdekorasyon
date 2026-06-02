@@ -939,24 +939,83 @@ ul {
    ============================================= */
 
 .page-hero {
-  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 60%, #1e3d6b 100%);
   padding: 130px 0 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
+  background-size: 52px 52px;
+  pointer-events: none;
 }
 
 .page-hero__inner {
-  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 3rem;
+}
+
+.page-hero__text {
+  text-align: left;
+}
+
+.page-hero__eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.8rem;
+  opacity: 0.9;
 }
 
 .page-hero__title {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(2rem, 4vw, 3rem);
   color: var(--white);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.page-hero__divider {
+  width: 40px;
+  height: 2px;
+  background: var(--orange);
+  border-radius: 2px;
+  margin: 1rem 0;
+  opacity: 0.8;
 }
 
 .page-hero__sub {
-  font-size: 1.05rem;
-  color: rgba(255,255,255,0.62);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.58);
+  line-height: 1.7;
+  max-width: 440px;
+  letter-spacing: 0.01em;
+}
+
+.page-hero__visual {
+  width: 280px;
+  flex-shrink: 0;
+  opacity: 0.92;
+}
+
+.page-hero__visual svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* =============================================
@@ -1210,6 +1269,24 @@ ul {
 
   .why-us-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .page-hero__inner {
+    grid-template-columns: 1fr;
+  }
+  .page-hero__visual {
+    display: none;
+  }
+  .page-hero__text {
+    text-align: center;
+  }
+  .page-hero__divider {
+    margin: 1rem auto;
+  }
+  .page-hero__sub {
+    max-width: 100%;
   }
 }
 

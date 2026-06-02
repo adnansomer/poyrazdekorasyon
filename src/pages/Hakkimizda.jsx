@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import PageHero from '../components/PageHero'
 
 const values = [
   { title: 'Kaliteli Malzeme', desc: 'Yalnızca onaylı, uzun ömürlü malzemeler kullanıyoruz.' },
@@ -12,15 +13,11 @@ const values = [
 export default function Hakkimizda() {
   return (
     <>
-      {/* Sayfa Başlığı */}
-      <div className="page-hero">
-        <div className="container page-hero__inner">
-          <h1 className="page-hero__title">Hakkımızda</h1>
-          <p className="page-hero__sub">
-            Güven, kalite ve titizlikle yürüttüğümüz tadilat ve dekorasyon hizmetleri.
-          </p>
-        </div>
-      </div>
+      <PageHero
+        title="Hakkımızda"
+        sub="Güven, kalite ve titizlikle yürüttüğümüz tadilat ve dekorasyon hizmetleri."
+        illustration="about"
+      />
 
       {/* Ana İçerik */}
       <section className="section">

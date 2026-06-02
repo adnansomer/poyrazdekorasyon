@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { services } from '../data/services'
+import PageHero from '../components/PageHero'
 
 export default function Hizmetler() {
   const { hash } = useLocation()
@@ -19,15 +20,11 @@ export default function Hizmetler() {
 
   return (
     <>
-      {/* Sayfa Başlığı */}
-      <div className="page-hero">
-        <div className="container page-hero__inner">
-          <h1 className="page-hero__title">Hizmetler</h1>
-          <p className="page-hero__sub">
-            Konut ve işyerlerinde sunduğumuz profesyonel tadilat ve dekorasyon hizmetleri.
-          </p>
-        </div>
-      </div>
+      <PageHero
+        title="Hizmetler"
+        sub="Konut ve işyerlerinde sunduğumuz profesyonel tadilat ve dekorasyon hizmetleri."
+        illustration="services"
+      />
 
       {/* Hizmet Detayları */}
       <section className="section">

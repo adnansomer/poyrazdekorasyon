@@ -1,0 +1,59 @@
+import { Link } from 'react-router-dom'
+
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="container">
+        <div className="footer__inner">
+          <div>
+            <div className="footer__brand-name">Poyraz Dekorasyon</div>
+            <div className="footer__brand-tagline">Tadilat &amp; Dekorasyon</div>
+            <p className="footer__brand-desc">
+              Konut ve işyerlerinde fayans, çatı izolasyonu, boya, alçı, su tesisatı ve daha
+              pek çok alanda profesyonel tadilat hizmetleri sunuyoruz.
+            </p>
+          </div>
+
+          <div>
+            <div className="footer__col-title">Sayfalar</div>
+            <div className="footer__links">
+              <Link to="/">Ana Sayfa</Link>
+              <Link to="/hakkimizda">Hakkımızda</Link>
+              <Link to="/hizmetler">Hizmetler</Link>
+              <Link to="/iletisim">İletişim</Link>
+            </div>
+          </div>
+
+          <div>
+            <div className="footer__col-title">İletişim</div>
+            <div className="footer__contact-list">
+              <div className="footer__contact-item">
+                <span className="footer__contact-icon">📞</span>
+                <span>05XX XXX XX XX</span>
+              </div>
+              <div className="footer__contact-item">
+                <span className="footer__contact-icon">✉️</span>
+                <span>info@poyrazdekorasyon.com</span>
+              </div>
+              <div className="footer__contact-item">
+                <span className="footer__contact-icon">📍</span>
+                <span>Örnek Mah., Dekorasyon Cad. No:12, İstanbul</span>
+              </div>
+              <div className="footer__contact-item">
+                <span className="footer__contact-icon">🕐</span>
+                <span>Pzt – Cmt / 09:00 – 19:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer__bottom">
+          <p className="footer__copy">
+            © {new Date().getFullYear()} <span>Poyraz Dekorasyon</span>. Tüm hakları saklıdır.
+          </p>
+          <p className="footer__copy">İstanbul, Türkiye</p>
+        </div>
+      </div>
+    </footer>
+  )
+}

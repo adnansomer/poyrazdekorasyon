@@ -26,8 +26,26 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar__inner">
         <Link to="/" className="navbar__logo" onClick={closeMenu}>
-          <span className="navbar__logo-name">Poyraz Dekorasyon</span>
-          <span className="navbar__logo-sub">Tadilat &amp; Dekorasyon</span>
+          <span className="navbar__logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="44" height="44" rx="10" fill="#e8a020"/>
+              <text
+                x="22"
+                y="30"
+                fontFamily="Georgia, 'Playfair Display', serif"
+                fontSize="18"
+                fontWeight="700"
+                fill="#ffffff"
+                textAnchor="middle"
+                letterSpacing="-0.5"
+              >PD</text>
+              <path d="M8 36 Q22 40 36 36" stroke="rgba(255,255,255,0.35)" strokeWidth="1.2" fill="none" strokeLinecap="round"/>
+            </svg>
+          </span>
+          <span className="navbar__logo-text">
+            <span className="navbar__logo-name">Poyraz Dekorasyon</span>
+            <span className="navbar__logo-sub">Tadilat &amp; Dekorasyon</span>
+          </span>
         </Link>
 
         <nav className={`navbar__nav ${menuOpen ? 'open' : ''}`}>

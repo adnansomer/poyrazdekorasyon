@@ -28,7 +28,7 @@ export const services = [
       'Teras ve balkon su yalıtımı',
     ],
     image:
-      'https://images.unsplash.com/photo-D6Qt4VcDYsQ?w=800&q=80',
+      'https://images.unsplash.com/photo-1599570750519-a26b62691be7?w=800&q=80',
     alt: 'Kiremit çatı izolasyonu',
   },
   {

@@ -48,7 +48,7 @@ export default function AnaSayfa() {
       <Hero />
 
       {/* Hizmetler Önizleme */}
-      <section className="section section--gray">
+      <section id="hizmetler-preview" className="section section--gray">
         <div className="container">
           <SectionTitle
             eyebrow="Neler Yapıyoruz"

@@ -72,10 +72,10 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero__scroll">
+      <a href="#hizmetler-preview" className="hero__scroll" aria-label="Hizmetlere git">
         <div className="hero__scroll-line" />
         <span>Aşağı kaydır</span>
-      </div>
+      </a>
     </section>
   )
 }

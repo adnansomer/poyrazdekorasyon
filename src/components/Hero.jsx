@@ -2,20 +2,24 @@ import { Link } from 'react-router-dom'
 
 const heroImages = [
   {
-    src: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80',
+    src: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=85',
     alt: 'Modern mutfak tadilat',
+    position: 'center center',
   },
   {
-    src: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=700&q=80',
-    alt: 'Banyo yenileme',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=700&q=80',
+    src: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=900&q=85',
     alt: 'İç mekan tadilat',
+    position: 'center 40%',
   },
   {
-    src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80',
+    src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=85',
     alt: 'Fayans döşeme',
+    position: 'center 60%',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&q=85',
+    alt: 'Banyo yenileme',
+    position: 'center center',
   },
 ]
 
@@ -55,7 +59,12 @@ export default function Hero() {
           <div className="hero__gallery-grid">
             {heroImages.map((img, i) => (
               <div className="hero__gallery-item" key={i}>
-                <img src={img.src} alt={img.alt} loading={i === 0 ? 'eager' : 'lazy'} />
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading={i === 0 ? 'eager' : 'lazy'}
+                  style={{ objectPosition: img.position }}
+                />
               </div>
             ))}
           </div>

@@ -147,33 +147,39 @@ export const services = [
 
 export const whyUs = [
   {
-    icon: '🏆',
+    iconKey: 'quality',
     title: 'Kaliteli İşçilik',
     description:
       'Yılların verdiği tecrübe ve titizlikle her işi özenle tamamlıyoruz.',
   },
   {
-    icon: '⏰',
+    iconKey: 'clock',
     title: 'Zamanında Teslim',
     description:
       'Belirlenen sürede, söz verilen tarihte teslim ilkemizden asla taviz vermiyoruz.',
   },
   {
-    icon: '💰',
+    iconKey: 'price',
     title: 'Uygun Fiyat',
     description:
       'Kaliteden ödün vermeden rekabetçi ve şeffaf fiyatlarla hizmet sunuyoruz.',
   },
   {
-    icon: '✨',
+    iconKey: 'clean',
     title: 'Temiz ve Düzenli Çalışma',
     description:
       'Çalışma alanını temiz tutarak işi bitirdiğimizde her şeyi düzenli bırakıyoruz.',
   },
   {
-    icon: '😊',
+    iconKey: 'customer',
     title: 'Müşteri Memnuniyeti',
     description:
       'Müşteri memnuniyeti en öncelikli hedefimizdir; işi bitene kadar yanınızdayız.',
+  },
+  {
+    iconKey: 'shield',
+    title: 'Garantili Hizmet',
+    description:
+      'Tüm işlerimiz garantilidir; teslim sonrası oluşan sorunlarda yanınızdayız.',
   },
 ]

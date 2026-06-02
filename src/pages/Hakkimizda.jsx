@@ -29,10 +29,10 @@ export default function Hakkimizda() {
             <div className="about-content__text">
               <h2>Poyraz Dekorasyon Kimdir?</h2>
               <p>
-                Poyraz Dekorasyon, İstanbul'da faaliyet gösteren profesyonel bir tadilat ve
-                dekorasyon firmasıdır. Konutlardan ofislere, işyerlerinden ticari alanlara kadar
-                geniş bir yelpazede hizmet sunarak müşterilerimizin yaşam ve çalışma alanlarını
-                yeniden şekillendiriyoruz.
+                Poyraz Dekorasyon, İzmir merkezli olarak kurulmuş; Türkiye'nin her yerinde
+                faaliyet gösteren profesyonel bir tadilat ve dekorasyon firmasıdır. Konutlardan
+                ofislere, işyerlerinden ticari alanlara kadar geniş bir yelpazede hizmet sunarak
+                müşterilerimizin yaşam ve çalışma alanlarını yeniden şekillendiriyoruz.
               </p>
               <p>
                 Fayans ve seramik döşemeden çatı izolasyonuna, demir doğramadan boya badanaya,
@@ -59,15 +59,15 @@ export default function Hakkimizda() {
                   <div className="about-stat__label">Tamamlanan Proje</div>
                 </div>
                 <div className="about-stat">
-                  <div className="about-stat__number">10+</div>
+                  <div className="about-stat__number">20+</div>
                   <div className="about-stat__label">Yıl Deneyim</div>
                 </div>
                 <div className="about-stat">
-                  <div className="about-stat__number">9</div>
+                  <div className="about-stat__number">10+</div>
                   <div className="about-stat__label">Farklı Hizmet</div>
                 </div>
                 <div className="about-stat">
-                  <div className="about-stat__number">%98</div>
+                  <div className="about-stat__number">%100</div>
                   <div className="about-stat__label">Müşteri Memnuniyeti</div>
                 </div>
               </div>

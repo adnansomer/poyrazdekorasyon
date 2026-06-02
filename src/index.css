@@ -283,26 +283,52 @@ ul {
   pointer-events: none;
 }
 
-.hero__content {
+.hero__layout {
   position: relative;
   z-index: 2;
-  max-width: 780px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
 }
 
-.hero__badge {
-  display: inline-flex;
+.hero__content {
+  max-width: 560px;
+}
+
+/* Gallery */
+.hero__gallery {
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
-  background: rgba(232, 160, 32, 0.15);
-  border: 1px solid rgba(232, 160, 32, 0.3);
-  border-radius: 50px;
-  padding: 0.4rem 1rem;
-  margin-bottom: 1.5rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--orange);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  justify-content: center;
+}
+
+.hero__gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: 480px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.hero__gallery-item {
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.hero__gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.hero__gallery-item:hover img {
+  transform: scale(1.04);
 }
 
 .hero__title {
@@ -491,7 +517,7 @@ ul {
 
 .why-us-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -510,9 +536,27 @@ ul {
   box-shadow: var(--shadow-md);
 }
 
-.why-us-card__icon {
-  font-size: 2.25rem;
-  margin-bottom: 1rem;
+.why-us-card__icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(26, 46, 74, 0.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.1rem;
+  color: var(--navy);
+  transition: background var(--transition), color var(--transition);
+}
+
+.why-us-card__icon-wrap svg {
+  width: 24px;
+  height: 24px;
+}
+
+.why-us-card:hover .why-us-card__icon-wrap {
+  background: var(--orange);
+  color: var(--white);
 }
 
 .why-us-card__title {
@@ -1104,6 +1148,15 @@ ul {
     padding: 56px 0;
   }
 
+  .hero__layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero__gallery {
+    display: none;
+  }
+
   .hero__actions {
     flex-direction: column;
   }
@@ -1127,6 +1180,12 @@ ul {
 
   .why-us-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .why-us-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

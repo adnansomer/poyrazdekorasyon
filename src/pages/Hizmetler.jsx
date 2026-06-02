@@ -31,9 +31,6 @@ export default function Hizmetler() {
                 />
               </div>
               <div className="service-detail__content">
-                <div className="service-detail__number">
-                  Hizmet {String(index + 1).padStart(2, '0')}
-                </div>
                 <h2 className="service-detail__title">{service.title}</h2>
                 <p className="service-detail__desc">{service.description}</p>
                 <ul className="service-detail__bullets">

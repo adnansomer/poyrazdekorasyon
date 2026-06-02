@@ -41,7 +41,8 @@ export default function Hero() {
             Poyraz Dekorasyon olarak; fayans döşemeden çatı izolasyonuna, boya
             badanadan su tesisatına, ev içi dekorasyondan komple tadilata kadar
             eviniz ve işyerinizin tüm ihtiyaçlarını deneyimli ekibimizle
-            karşılıyoruz. Kalite, güven ve zamanında teslim ilkemizden asla
+            karşılıyoruz. Ücretsiz keşif hizmetimizle projenizi yerinde
+            değerlendiriyor, kalite, güven ve zamanında teslim ilkemizden asla
             taviz vermiyoruz.
           </p>
 

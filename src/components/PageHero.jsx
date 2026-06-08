@@ -70,14 +70,42 @@ const ContactIllustration = () => (
   </svg>
 )
 
+const PortfolioIllustration = () => (
+  <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    {/* Arka kart — sağa eğik */}
+    <rect x="22" y="26" width="46" height="34" rx="4"
+      fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.22)" strokeWidth="1.4"
+      transform="rotate(6 45 43)"/>
+    {/* Orta kart — sola hafif eğik */}
+    <rect x="18" y="24" width="46" height="34" rx="4"
+      fill="rgba(232,160,32,0.08)" stroke="rgba(232,160,32,0.5)" strokeWidth="1.4"
+      transform="rotate(-4 41 41)"/>
+    {/* Ön kart — düz */}
+    <rect x="20" y="28" width="46" height="34" rx="4"
+      fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.9)" strokeWidth="1.5"/>
+    {/* Fotoğraf simgesi — dağlar */}
+    <polyline points="24 56 32 44 40 52 47 46 56 56"
+      fill="none" stroke="#e8a020" strokeWidth="1.6" strokeLinejoin="round" strokeLinecap="round"/>
+    {/* Güneş/lens dairesi */}
+    <circle cx="52" cy="37" r="4"
+      fill="rgba(232,160,32,0.18)" stroke="#e8a020" strokeWidth="1.4"/>
+    {/* Alt etiket çizgisi */}
+    <line x1="28" y1="75" x2="68" y2="75"
+      stroke="rgba(255,255,255,0.15)" strokeWidth="1"/>
+    <line x1="33" y1="80" x2="63" y2="80"
+      stroke="rgba(232,160,32,0.35)" strokeWidth="1.2" strokeLinecap="round"/>
+  </svg>
+)
+
 export default function PageHero({ title, sub, illustration }) {
   return (
     <div className="page-hero">
       <div className="container page-hero__inner">
         <div className="page-hero__visual" aria-hidden="true">
-          {illustration === 'about'    && <AboutIllustration />}
-          {illustration === 'services' && <ServicesIllustration />}
-          {illustration === 'contact'  && <ContactIllustration />}
+          {illustration === 'about'     && <AboutIllustration />}
+          {illustration === 'services'  && <ServicesIllustration />}
+          {illustration === 'contact'   && <ContactIllustration />}
+          {illustration === 'portfolio' && <PortfolioIllustration />}
         </div>
         <div className="page-hero__text">
           <div className="page-hero__eyebrow">Poyraz Dekorasyon</div>

@@ -32,6 +32,15 @@ import lavabo1 from '../photos/lavabo-1.jpg'
 import lavabo2 from '../photos/lavabo-2.jpg'
 import lavabo3 from '../photos/lavabo-3.jpg'
 
+import uctan1 from '../photos/uctan-uca-ev1.jpg'
+import uctan2 from '../photos/uctan-uca-ev2.jpg'
+import uctan3 from '../photos/uctan-uca-ev3.jpg'
+import uctan4 from '../photos/uctan-uca-ev4.jpg'
+import uctan5 from '../photos/uctan-uca-ev5.jpg'
+import uctan6 from '../photos/uctan-uca-ev6.jpg'
+import uctan7 from '../photos/uctan-uca-ev7.jpg'
+import uctan8 from '../photos/uctan-uca-ev8.jpg'
+
 const galleries = [
   {
     title: 'Çatı',
@@ -88,6 +97,19 @@ const galleries = [
       { src: lavabo3, alt: 'Lavabo çalışması 3' },
     ],
   },
+  {
+    title: 'Uçtan Uca Ev',
+    images: [
+      { src: uctan1, alt: 'Uçtan uca ev projesi 1' },
+      { src: uctan2, alt: 'Uçtan uca ev projesi 2' },
+      { src: uctan3, alt: 'Uçtan uca ev projesi 3' },
+      { src: uctan4, alt: 'Uçtan uca ev projesi 4' },
+      { src: uctan5, alt: 'Uçtan uca ev projesi 5' },
+      { src: uctan6, alt: 'Uçtan uca ev projesi 6' },
+      { src: uctan7, alt: 'Uçtan uca ev projesi 7' },
+      { src: uctan8, alt: 'Uçtan uca ev projesi 8' },
+    ],
+  },
 ]
 
 export default function YapilanIsler() {
@@ -96,7 +118,7 @@ export default function YapilanIsler() {
       <PageHero
         title="Yapılan İşler"
         sub="Tamamladığımız projelerden seçkiler — kendi işçiliğimiz, kendi fotoğraflarımız."
-        illustration="services"
+        illustration="portfolio"
       />
 
       <section className="section">

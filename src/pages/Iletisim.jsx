@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import MapSection from '../components/MapSection'
 import PageHero from '../components/PageHero'
 
@@ -58,9 +59,23 @@ const contactItems = [
 export default function Iletisim() {
   return (
     <>
+      <Helmet>
+        <title>İletişim | Poyraz Dekorasyon – İzmir Bornova Tadilat Teklif Al</title>
+        <meta name="description" content="Poyraz Dekorasyon ile iletişime geçin. İzmir Bornova Mevlana Mahallesi 1776/14 No:11. Tel: 0545 209 65 57 – 0506 178 31 49. Ücretsiz keşif ve fiyat teklifi için hemen arayın." />
+        <link rel="canonical" href="https://www.poyrazdekorasyon.net/iletisim" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.poyrazdekorasyon.net/" },
+            { "@type": "ListItem", "position": 2, "name": "İletişim", "item": "https://www.poyrazdekorasyon.net/iletisim" }
+          ]
+        })}</script>
+      </Helmet>
+
       <PageHero
         title="İletişim"
-        sub="Projeniz için teklif almak veya bilgi edinmek için bize ulaşın."
+        sub="İzmir Bornova'da ücretsiz keşif ve fiyat teklifi için hemen arayın."
         illustration="contact"
       />
 

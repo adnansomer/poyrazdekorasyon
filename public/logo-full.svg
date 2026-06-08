@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <!-- Arka plan yok (şeffaf) -->
+
+  <!-- Sol: İkon kutu -->
+  <rect x="0" y="8" width="64" height="64" rx="6" fill="#1a2e4a"/>
+  <!-- Çatı ikonu -->
+  <polygon points="32,18 54,36 10,36" fill="#e8a020"/>
+  <rect x="16" y="36" width="32" height="22" rx="2" fill="#e8a020" opacity="0.85"/>
+  <rect x="26" y="44" width="12" height="14" rx="2" fill="#1a2e4a"/>
+
+  <!-- Sağ: Yazılar -->
+  <text x="80" y="38" font-family="Arial Black, Arial, sans-serif" font-size="22" font-weight="900" fill="#1a2e4a" letter-spacing="-0.5">POYRAZ</text>
+  <text x="80" y="58" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#e8a020" letter-spacing="3">DEKORASYON</text>
+  <!-- Alt çizgi -->
+  <line x1="80" y1="63" x2="310" y2="63" stroke="#1a2e4a" stroke-width="1.5" opacity="0.15"/>
+  <text x="80" y="74" font-family="Arial, sans-serif" font-size="9.5" fill="#5a6a7a" letter-spacing="1">İZMİR BORNOVA · TADİLAT &amp; DEKORASYON</text>
+</svg>

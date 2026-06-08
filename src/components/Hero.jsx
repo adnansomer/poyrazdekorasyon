@@ -33,17 +33,17 @@ export default function Hero() {
         {/* Sol: Metin */}
         <div className="hero__content">
           <h1 className="hero__title">
-            Tadilat, Dekorasyon ve<br />
-            Yapı İşlerinde <span>Güvenilir Çözüm</span>
+            İzmir Bornova Tadilat,<br />
+            Dekorasyon ve <span>İnşaat Ustası</span>
           </h1>
 
           <p className="hero__description">
-            Poyraz Dekorasyon olarak; fayans döşemeden çatı izolasyonuna, boya
-            badanadan su tesisatına, ev içi dekorasyondan komple tadilata kadar
-            eviniz ve işyerinizin tüm ihtiyaçlarını deneyimli ekibimizle
-            karşılıyoruz. Ücretsiz keşif hizmetimizle projenizi yerinde
-            değerlendiriyor, kalite, güven ve zamanında teslim ilkemizden asla
-            taviz vermiyoruz.
+            Poyraz Dekorasyon olarak İzmir Bornova ve çevresinde; fayans, seramik
+            döşemeden çatı tamiratına, boya badanadan alçı sıvaya, mutfak
+            tadilatından demir doğramaya, tavan dekorasyonundan su tesisatına
+            kadar her türlü tadilat ve inşaat işini deneyimli ekibimizle
+            yapıyoruz. Ücretsiz keşif hizmetimizle projenizi yerinde
+            değerlendiriyor, kalite ve zamanında teslim ilkemizden taviz vermiyoruz.
           </p>
 
           <div className="hero__actions">

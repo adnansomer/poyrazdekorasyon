@@ -1,10 +1,10 @@
 export const services = [
   {
     id: 'fayans',
-    title: 'Fayans ve Seramik İşleri',
+    title: 'Fayans ve Seramik Döşeme',
     shortTitle: 'Fayans',
     description:
-      'Zemin ve duvar kaplamalarında yüksek kaliteli fayans ve seramik döşeme hizmetleri sunuyoruz. Tecrübeli ekibimizle her alanda kusursuz uygulama gerçekleştiriyoruz.',
+      'İzmir Bornova ve çevresinde zemin, duvar, banyo ve mutfak fayans ile seramik döşeme hizmetleri sunuyoruz. Porselen, granit ve doğal taş dahil her türlü kaplama işini deneyimli usta ekibimizle yapıyoruz.',
     bullets: [
       'Zemin ve duvar fayans döşeme',
       'Seramik ve porselen kaplama',
@@ -13,30 +13,30 @@ export const services = [
     ],
     image:
       'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-    alt: 'Fayans ve seramik döşeme',
+    alt: 'İzmir Bornova fayans ve seramik döşeme ustası',
   },
   {
     id: 'cati',
-    title: 'Çatı İzolasyonu',
-    shortTitle: 'Çatı İzolasyonu',
+    title: 'Çatı Tamiratı ve İzolasyonu',
+    shortTitle: 'Çatı Tamiratı',
     description:
-      'Binanızı nem, su sızıntısı ve ısı kayıplarından korumak için profesyonel çatı izolasyonu uyguluyoruz. Uzun ömürlü malzemeler ve uzman ekiple kalıcı çözümler sunuyoruz.',
+      'İzmir\'de binanızı nem, su sızıntısı ve ısı kayıplarından korumak için profesyonel çatı tamiratı ve izolasyon hizmetleri veriyoruz. Bornova ve tüm İzmir genelinde çatı onarımı yapılır.',
     bullets: [
       'Su yalıtımı ve nem önleme',
       'Isı izolasyonu uygulaması',
-      'Çatı onarım ve yenileme',
+      'Çatı onarım, tamir ve yenileme',
       'Teras ve balkon su yalıtımı',
     ],
     image:
       'https://images.unsplash.com/photo-1726162185971-fa7469a096e0?w=800&q=80',
-    alt: 'Kırmızı çatılı ev havadan görünüm',
+    alt: 'İzmir çatı tamiratı ve izolasyonu',
   },
   {
     id: 'demir',
     title: 'Demir Doğrama',
     shortTitle: 'Demir Doğrama',
     description:
-      'Kapı, pencere, korkuluk, çelik kapı ve özel tasarım demir doğrama işleri için güvenilir ve dayanıklı çözümler üretiyoruz.',
+      'İzmir Bornova\'da kapı, pencere, korkuluk, çelik kapı ve özel tasarım demir doğrama imalatı ve montajı yapıyoruz. Güvenilir, dayanıklı ve estetik demir işleri için bizi arayın.',
     bullets: [
       'Çelik kapı ve demir kapı yapımı',
       'Balkon ve merdiven korkuluğu',
@@ -45,30 +45,46 @@ export const services = [
     ],
     image:
       'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80',
-    alt: 'Demir doğrama ve metal işleri',
+    alt: 'İzmir Bornova demir doğrama ustası',
+  },
+  {
+    id: 'mutfak',
+    title: 'Mutfak Tadilatı',
+    shortTitle: 'Mutfak',
+    description:
+      'İzmir\'de komple mutfak tadilat ve yenileme hizmetleri sunuyoruz. Fayans döşemeden dolap montajına, tezgah değişiminden boya badanaya kadar mutfağınızı baştan sona yeniliyoruz.',
+    bullets: [
+      'Komple mutfak yenileme ve tadilat',
+      'Mutfak fayans ve tezgah değişimi',
+      'Dolap sökme, montaj ve düzenleme',
+      'Tesisat bağlantı ve güncelleme',
+    ],
+    image:
+      'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
+    alt: 'İzmir mutfak tadilatı',
   },
   {
     id: 'tadilat',
-    title: 'Ev İçi Tadilat',
-    shortTitle: 'Ev İçi Tadilat',
+    title: 'Ev ve İşyeri Tadilatı',
+    shortTitle: 'Tadilat',
     description:
-      'Evinizdeki her türlü iç mekan tadilatını baştan sona profesyonelce gerçekleştiriyoruz. Kat tadilatından komple yenilemeye kadar tüm işler ekibimizle yürütülüyor.',
+      'İzmir Bornova\'da ev, daire ve işyeri tadilatı için komple hizmet veriyoruz. Küçük tamir ve onarımdan komple inşaat ve yenilemeye kadar tüm tadilat işlerini deneyimli ekibimizle yapıyoruz.',
     bullets: [
-      'Komple daire ve ev yenileme',
-      'Duvar yıkım ve bölme işleri',
+      'Komple daire, ev ve işyeri yenileme',
+      'Duvar yıkım, bölme ve tamir işleri',
       'Zemin değişimi ve kaplama',
       'Elektrik ve sıhhi tesisat düzenlemeleri',
     ],
     image:
       'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80',
-    alt: 'Ev içi tadilat çalışması',
+    alt: 'İzmir Bornova ev tadilat ve tamir',
   },
   {
     id: 'boya',
     title: 'Boya ve Badana',
     shortTitle: 'Boya Badana',
     description:
-      'İç ve dış cephe boyası, badana, dekoratif kaplama ve özel efekt boya uygulamaları ile mekanlarınıza yeni bir görünüm kazandırıyoruz.',
+      'İzmir Bornova\'da iç ve dış cephe boya, badana, dekoratif kaplama ve özel efekt boya uygulamaları yapıyoruz. Usta boya ekibimizle ev, daire ve işyerlerine hızlı ve kaliteli hizmet.',
     bullets: [
       'İç mekan boya ve badana',
       'Dış cephe boya uygulaması',
@@ -77,14 +93,14 @@ export const services = [
     ],
     image:
       'https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=800&q=80',
-    alt: 'Boya ve badana uygulaması',
+    alt: 'İzmir Bornova boya badana ustası',
   },
   {
     id: 'alci',
-    title: 'Alçı ve Sıva İşleri',
-    shortTitle: 'Alçı',
+    title: 'Alçı, Sıva ve Tavan İşleri',
+    shortTitle: 'Alçı & Sıva',
     description:
-      'Düzgün ve pürüzsüz yüzeyler için alçı sıva, alçı levha montajı ve dekoratif alçı uygulamaları gerçekleştiriyoruz.',
+      'İzmir\'de düzgün ve pürüzsüz yüzeyler için alçı sıva, alçı levha (drywall) montajı ve dekoratif alçı uygulamaları yapıyoruz. Tavan ve duvar sıva işleri Bornova dahil tüm İzmir\'de.',
     bullets: [
       'Alçı sıva ve perdah uygulaması',
       'Alçı levha (drywall) montajı',
@@ -93,30 +109,30 @@ export const services = [
     ],
     image:
       'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80',
-    alt: 'Alçı ve sıva işleri',
+    alt: 'İzmir alçı sıva ve tavan ustası',
   },
   {
     id: 'asma-tavan',
-    title: 'Asma Tavan',
+    title: 'Asma Tavan ve Tavan Dekorasyon',
     shortTitle: 'Asma Tavan',
     description:
-      'Modern ve estetik asma tavan sistemleri ile mekanlarınıza hem güzel bir görünüm hem de pratik çözümler sunuyoruz.',
+      'İzmir Bornova\'da modern asma tavan ve tavan dekorasyon sistemleri kuruyoruz. Alçıpan tavan, LED aydınlatma entegrasyonu ve özel tasarım tavanlarla mekanlarınıza şıklık katıyoruz.',
     bullets: [
       'Alçıpan asma tavan sistemleri',
-      'Aydınlatma entegrasyonu',
-      'Spot ve sarkıt yerleşimi',
+      'LED ve spot aydınlatma entegrasyonu',
+      'Sarkıt ve gömme aydınlatma yerleşimi',
       'Geometrik ve özel tasarım tavanlar',
     ],
     image:
       'https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=800&q=80',
-    alt: 'Asma tavan uygulaması',
+    alt: 'İzmir asma tavan ve tavan dekorasyon',
   },
   {
     id: 'su-tesisati',
     title: 'Su Tesisatı',
     shortTitle: 'Su Tesisatı',
     description:
-      'Konut ve işyerlerinde temiz su ve pis su tesisatı döşeme, onarım ve yenileme işlerini ustalıkla gerçekleştiriyoruz.',
+      'İzmir Bornova\'da konut ve işyerlerinde su tesisatı döşeme, onarım ve yenileme işleri yapıyoruz. Tesisat kaçak tespiti, tamir ve yeni boru döşeme işleri usta ekibimizle gerçekleştirilir.',
     bullets: [
       'Sıhhi tesisat kurulum ve yenileme',
       'Pis su ve temiz su borulaması',
@@ -125,14 +141,14 @@ export const services = [
     ],
     image:
       'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800&q=80',
-    alt: 'Su tesisatı çalışması',
+    alt: 'İzmir Bornova su tesisatı ustası',
   },
   {
     id: 'banyo',
-    title: 'Tuvalet ve Banyo Yapımı',
-    shortTitle: 'Tuvalet/Banyo',
+    title: 'Banyo ve Tuvalet Yapımı',
+    shortTitle: 'Banyo Yapımı',
     description:
-      'Sıfırdan banyo ve tuvalet yapımı ya da mevcut alanların komple yenilenmesi için estetik ve fonksiyonel çözümler sunuyoruz.',
+      'İzmir\'de sıfırdan banyo ve tuvalet yapımı ile mevcut banyoların komple yenilenmesi için hizmet veriyoruz. Fayans döşeme, tesisat ve tüm banyo işleri tek ekip tarafından yapılır.',
     bullets: [
       'Komple banyo yenileme ve yapımı',
       'Tuvalet ve duşakabin montajı',
@@ -141,7 +157,7 @@ export const services = [
     ],
     image:
       'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80',
-    alt: 'Banyo yenileme ve yapımı',
+    alt: 'İzmir Bornova banyo yenileme ve yapımı',
   },
 ]
 

@@ -1,21 +1,5 @@
 export const services = [
   {
-    id: 'fayans',
-    title: 'Fayans ve Seramik Döşeme',
-    shortTitle: 'Fayans',
-    description:
-      'İzmir Bornova ve çevresinde zemin, duvar, banyo ve mutfak fayans ile seramik döşeme hizmetleri sunuyoruz. Porselen, granit ve doğal taş dahil her türlü kaplama işini deneyimli usta ekibimizle yapıyoruz.',
-    bullets: [
-      'Zemin ve duvar fayans döşeme',
-      'Seramik ve porselen kaplama',
-      'Banyo ve mutfak fayans uygulaması',
-      'Derzleme ve estetik detay işleri',
-    ],
-    image:
-      'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-    alt: 'İzmir Bornova fayans ve seramik döşeme ustası',
-  },
-  {
     id: 'cati',
     title: 'Çatı Tamiratı ve İzolasyonu',
     shortTitle: 'Çatı Tamiratı',

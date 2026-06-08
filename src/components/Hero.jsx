@@ -33,8 +33,8 @@ export default function Hero() {
         {/* Sol: Metin */}
         <div className="hero__content">
           <h1 className="hero__title">
-            İzmir Bornova Tadilat,<br />
-            Dekorasyon ve <span>İnşaat Ustası</span>
+            Tüm İzmir ve Çevresinde<br />
+            <span>Tadilat ve Dekorasyon</span>
           </h1>
 
           <p className="hero__description">

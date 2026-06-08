@@ -1410,3 +1410,77 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+/* =============================================
+   FLOATING CALL BUTTON
+   ============================================= */
+
+.floating-call {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.75rem 1.25rem 0.75rem 0.9rem;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.floating-call:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.55);
+}
+
+.floating-call:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.floating-call__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.floating-call__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Titreşim animasyonu — 4 saniyede bir */
+@keyframes float-ring {
+  0%, 100% { transform: rotate(0deg); }
+  10%       { transform: rotate(-15deg); }
+  20%       { transform: rotate(15deg); }
+  30%       { transform: rotate(-10deg); }
+  40%       { transform: rotate(10deg); }
+  50%       { transform: rotate(0deg); }
+}
+
+.floating-call__icon {
+  animation: float-ring 4s ease-in-out infinite;
+}
+
+.floating-call:hover .floating-call__icon {
+  animation: none;
+}
+
+@media (max-width: 480px) {
+  .floating-call {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    padding: 0.7rem 1rem 0.7rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}

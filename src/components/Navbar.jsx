@@ -78,6 +78,7 @@ export default function Navbar() {
 
         <nav className={`navbar__nav ${menuOpen ? 'open' : ''}`}>
           <NavLink to="/" end className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`} onClick={closeMenu}>Ana Sayfa</NavLink>
+          <NavLink to="/yapilan-isler" className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`} onClick={closeMenu}>Yapılan İşler</NavLink>
           <NavLink to="/hakkimizda" className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`} onClick={closeMenu}>Hakkımızda</NavLink>
           <NavLink to="/hizmetler" className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`} onClick={closeMenu}>Hizmetler</NavLink>
           <NavLink to="/iletisim" className={({ isActive }) => `navbar__link btn btn-primary navbar__cta${isActive ? ' active' : ''}`} onClick={closeMenu}>İletişim</NavLink>

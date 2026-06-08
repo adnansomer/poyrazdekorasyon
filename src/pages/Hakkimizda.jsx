@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 
@@ -14,23 +13,9 @@ const values = [
 export default function Hakkimizda() {
   return (
     <>
-      <Helmet>
-        <title>Hakkımızda | Poyraz Dekorasyon – İzmir Bornova Tadilat ve İnşaat Firması</title>
-        <meta name="description" content="Poyraz Dekorasyon, İzmir Bornova merkezli profesyonel tadilat, dekorasyon ve inşaat firmasıdır. 20+ yıl deneyim, 500+ tamamlanan proje. Bornova, Karşıyaka, Buca, Konak ve tüm İzmir'de hizmet." />
-        <link rel="canonical" href="https://www.poyrazdekorasyon.net/hakkimizda" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.poyrazdekorasyon.net/" },
-            { "@type": "ListItem", "position": 2, "name": "Hakkımızda", "item": "https://www.poyrazdekorasyon.net/hakkimizda" }
-          ]
-        })}</script>
-      </Helmet>
-
       <PageHero
         title="Hakkımızda"
-        sub="İzmir Bornova merkezli, güven ve kaliteyle 20 yıldır tadilat ve dekorasyon hizmetindeyiz."
+        sub="Güven, kalite ve titizlikle yürüttüğümüz tadilat ve dekorasyon hizmetleri."
         illustration="about"
       />
 
@@ -41,16 +26,16 @@ export default function Hakkimizda() {
             <div className="about-content__text">
               <h2>Poyraz Dekorasyon Kimdir?</h2>
               <p>
-                Poyraz Dekorasyon, İzmir Bornova merkezli profesyonel bir tadilat, dekorasyon
-                ve inşaat firmasıdır. Bornova, Karşıyaka, Buca, Konak, Bayraklı ve tüm İzmir
-                genelinde konutlardan ofislere, işyerlerinden ticari alanlara kadar geniş bir
-                yelpazede hizmet sunuyoruz.
+                Poyraz Dekorasyon, İzmir merkezli olarak kurulmuş; Türkiye'nin her yerinde
+                faaliyet gösteren profesyonel bir tadilat ve dekorasyon firmasıdır. Konutlardan
+                ofislere, işyerlerinden ticari alanlara kadar geniş bir yelpazede hizmet sunarak
+                müşterilerimizin yaşam ve çalışma alanlarını yeniden şekillendiriyoruz.
               </p>
               <p>
-                Fayans ve seramik döşemeden çatı tamiratına, demir doğramadan boya badanaya,
-                alçı ve sıva işlerinden asma tavan sistemlerine, mutfak tadilatından su tesisatına,
-                tuvalet ve banyo yapımından genel tamir ve inşaat işlerine kadar tüm tadilat
-                süreçlerini deneyimli usta ekibimizle uçtan uca yönetiyoruz.
+                Fayans ve seramik döşemeden çatı izolasyonuna, demir doğramadan boya badanaya,
+                alçı işlerinden asma tavan sistemlerine, su tesisatından tuvalet ve banyo
+                yapımına kadar tüm tadilat süreçlerini deneyimli ekibimizle uçtan uca
+                yönetiyoruz.
               </p>
               <p>
                 Temel prensibimiz; doğru malzeme, doğru işçilik ve dürüst iletişimdir. Her

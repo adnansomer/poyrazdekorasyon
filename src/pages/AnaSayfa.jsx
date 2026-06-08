@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import SectionTitle from '../components/SectionTitle'
@@ -46,58 +45,6 @@ const WhyIcons = {
 export default function AnaSayfa() {
   return (
     <>
-      <Helmet>
-        <title>Poyraz Dekorasyon | İzmir Bornova Tadilat, İnşaat, Fayans, Boya Ustası</title>
-        <meta name="description" content="İzmir Bornova'da profesyonel tadilat ve dekorasyon: fayans, seramik, boya, badana, alçı, sıva, çatı tamiratı, mutfak, demir doğrama, tavan. Ücretsiz keşif: 0545 209 65 57" />
-        <link rel="canonical" href="https://www.poyrazdekorasyon.net/" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "İzmir Bornova'da tadilat firması var mı?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Evet. Poyraz Dekorasyon, İzmir Bornova merkezli profesyonel bir tadilat ve dekorasyon firmasıdır. Fayans, boya, alçı, çatı tamiratı, mutfak tadilatı ve daha pek çok hizmet sunmaktadır. Ücretsiz keşif için 0545 209 65 57 numaralı telefonu arayabilirsiniz."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "İzmir'de ücretsiz tadilat keşfi yapılıyor mu?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Evet. Poyraz Dekorasyon, İzmir ve çevresinde ücretsiz keşif hizmeti vermektedir. Uzman ekip projenizi yerinde değerlendirerek aynı gün fiyat teklifi sunar. Randevu için 0545 209 65 57 veya 0506 178 31 49 numaralı telefonları arayabilirsiniz."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Bornova'da fayans ustası nerede bulunur?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Poyraz Dekorasyon, Bornova ve tüm İzmir genelinde zemin, duvar, banyo ve mutfak fayans ile seramik döşeme hizmetleri vermektedir. 0545 209 65 57 numaralı telefonu arayarak bilgi alabilirsiniz."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "İzmir'de hangi tadilat hizmetleri verilmektedir?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Poyraz Dekorasyon; fayans ve seramik döşeme, boya ve badana, alçı ve sıva, asma tavan, çatı tamiratı ve izolasyonu, mutfak tadilatı, banyo yapımı, demir doğrama, su tesisatı ve komple ev ile işyeri tadilatı hizmetleri vermektedir."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Poyraz Dekorasyon'un adresi ve çalışma saatleri nedir?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Poyraz Dekorasyon, Mevlana Mahallesi 1776/14 No:11, Bornova / İzmir adresinde yer almaktadır. Pazartesi – Cumartesi 09:00 – 19:00 saatleri arasında hizmet vermektedir. Telefon: 0545 209 65 57."
-              }
-            }
-          ]
-        })}</script>
-      </Helmet>
-
       <Hero />
 
       {/* Hizmetler Önizleme */}

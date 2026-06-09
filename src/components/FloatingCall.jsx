@@ -4,13 +4,18 @@ export default function FloatingCall() {
   const navigate = useNavigate()
 
   const handleClick = (e) => {
-    e.preventDefault()
-    navigate('/iletisim')
+    const isMobile = window.innerWidth <= 768
+    if (isMobile) {
+      window.location.href = 'tel:+905452096557'
+    } else {
+      e.preventDefault()
+      navigate('/iletisim')
+    }
   }
 
   return (
     <a
-      href="/iletisim"
+      href="tel:+905452096557"
       onClick={handleClick}
       className="floating-call"
       aria-label="Hemen Arayın"

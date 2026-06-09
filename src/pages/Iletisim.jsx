@@ -80,7 +80,7 @@ export default function Iletisim() {
                 <div className="contact-info-card__label">{label}</div>
                 <div className="contact-info-card__value">
                   {href ? (
-                    <a href={href}>{value}</a>
+                    <a href={href} onClick={() => { window.location.href = href }}>{value}</a>
                   ) : (
                     <span style={{ whiteSpace: 'pre-line' }}>{value}</span>
                   )}

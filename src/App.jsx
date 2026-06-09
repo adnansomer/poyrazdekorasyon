@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import FloatingCall from './components/FloatingCall'
 import AnaSayfa from './pages/AnaSayfa'
 import YapilanIsler from './pages/YapilanIsler'
 import Hakkimizda from './pages/Hakkimizda'
@@ -34,6 +35,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <FloatingCall />
     </>
   )
 }

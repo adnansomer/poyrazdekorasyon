@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://poyrazdekorasyon.com/sitemap.xml
+Sitemap: https://www.poyrazdekorasyon.net/sitemap.xml

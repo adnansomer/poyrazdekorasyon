@@ -283,6 +283,7 @@ ul {
   align-items: center;
   background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, #1e3a5f 100%);
   overflow: hidden;
+  padding-top: 68px;
 }
 
 .hero__bg-pattern {
@@ -1353,6 +1354,10 @@ ul {
   }
 
   .hero__gallery {
+    display: none;
+  }
+
+  .hero__scroll {
     display: none;
   }
 }

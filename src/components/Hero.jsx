@@ -38,7 +38,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero__description">
-            Poyraz Dekorasyon olarak İzmir Bornova ve çevresinde; fayans, seramik
+            Poyraz Dekorasyon olarak İzmir ve tüm çevre illerde; fayans, seramik
             döşemeden çatı tamiratına, boya badanadan alçı sıvaya, mutfak
             tadilatından demir doğramaya, tavan dekorasyonundan su tesisatına
             kadar her türlü tadilat ve inşaat işini deneyimli ekibimizle

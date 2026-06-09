@@ -51,6 +51,9 @@ export default function Footer() {
           <p className="footer__copy">
             © {new Date().getFullYear()} <span>Poyraz Dekorasyon</span>. Tüm hakları saklıdır.
           </p>
+          <p className="footer__copy">
+            İzmir Tadilat &amp; İnşaat — Bornova · Karşıyaka · Buca · Konak · Çiğli · Gaziemir ve tüm İzmir
+          </p>
         </div>
       </div>
     </footer>

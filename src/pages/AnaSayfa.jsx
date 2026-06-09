@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import SectionTitle from '../components/SectionTitle'
 import ServiceCard from '../components/ServiceCard'
 import { services, whyUs } from '../data/services'
+import usePageMeta from '../hooks/usePageMeta'
 
 const WhyIcons = {
   quality: (
@@ -43,6 +44,10 @@ const WhyIcons = {
 }
 
 export default function AnaSayfa() {
+  usePageMeta(
+    'Poyraz Dekorasyon | İzmir Tadilat, İnşaat ve Dekorasyon Hizmetleri',
+    'İzmir ve çevresinde tadilat, inşaat, dekorasyon hizmetleri. Bornova merkezli Poyraz Dekorasyon — fayans, çatı tamiratı, boya badana, alçı, mutfak-banyo tadilatı, su tesisatı, demir doğrama. Ücretsiz keşif: 0545 209 65 57'
+  )
   return (
     <>
       <Hero />

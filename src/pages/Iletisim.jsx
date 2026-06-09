@@ -1,5 +1,6 @@
 import MapSection from '../components/MapSection'
 import PageHero from '../components/PageHero'
+import usePageMeta from '../hooks/usePageMeta'
 
 const PhoneIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -56,6 +57,10 @@ const contactItems = [
 ]
 
 export default function Iletisim() {
+  usePageMeta(
+    'İletişim | Poyraz Dekorasyon İzmir – Ücretsiz Keşif ve Fiyat Teklifi',
+    'İzmir\'de tadilat ve dekorasyon için bize ulaşın. Bornova, Karşıyaka, Buca, Konak ve tüm İzmir\'e hizmet. Ücretsiz keşif için: 0545 209 65 57 – 0506 178 31 49'
+  )
   return (
     <>
       <PageHero

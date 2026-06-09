@@ -2,8 +2,13 @@ import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { services } from '../data/services'
 import PageHero from '../components/PageHero'
+import usePageMeta from '../hooks/usePageMeta'
 
 export default function Hizmetler() {
+  usePageMeta(
+    'İzmir Tadilat Hizmetleri | Fayans, Çatı, Boya, Alçı, Banyo – Poyraz Dekorasyon',
+    'İzmir\'de tadilat hizmetleri: çatı tamiratı, fayans döşeme, boya badana, alçı sıva, mutfak tadilatı, banyo yapımı, su tesisatı, demir doğrama, asma tavan. Bornova ve tüm İzmir\'e hizmet.'
+  )
   const { hash } = useLocation()
 
   useEffect(() => {

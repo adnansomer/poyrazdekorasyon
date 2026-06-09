@@ -1,5 +1,6 @@
 import PageHero from '../components/PageHero'
 import PhotoGallery from '../components/PhotoGallery'
+import usePageMeta from '../hooks/usePageMeta'
 
 import cati1 from '../photos/cati-1.jpg'
 import cati2 from '../photos/cati-2.jpg'
@@ -113,6 +114,10 @@ const galleries = [
 ]
 
 export default function YapilanIsler() {
+  usePageMeta(
+    'Yapılan İşler | İzmir Tadilat Projeleri – Poyraz Dekorasyon',
+    'İzmir\'de tamamladığımız tadilat ve dekorasyon projeleri. Çatı, ev dekorasyonu, ışıklandırma, kapı tasarımı, korkuluk, lavabo ve uçtan uca ev yenileme çalışmalarımızdan örnekler.'
+  )
   return (
     <>
       <PageHero

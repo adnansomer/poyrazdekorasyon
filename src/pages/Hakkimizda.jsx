@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import usePageMeta from '../hooks/usePageMeta'
 
 const values = [
   { title: 'Kaliteli Malzeme', desc: 'Yalnızca onaylı, uzun ömürlü malzemeler kullanıyoruz.' },
@@ -11,6 +12,10 @@ const values = [
 ]
 
 export default function Hakkimizda() {
+  usePageMeta(
+    'Hakkımızda | Poyraz Dekorasyon – İzmir Tadilat Firması',
+    '20 yılı aşkın deneyimiyle İzmir Bornova merkezli Poyraz Dekorasyon. 500\'den fazla tamamlanan proje, garantili hizmet ve uzman ekip. İzmir\'in güvenilir tadilat ve inşaat firması.'
+  )
   return (
     <>
       <PageHero

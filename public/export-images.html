@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Görselleri PNG Olarak İndir</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; background: #f0f0f0; }
+    h2 { color: #1a2e4a; }
+    .card { background: white; border-radius: 10px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    canvas { display: block; border-radius: 6px; max-width: 100%; }
+    button {
+      margin-top: 12px;
+      background: #e8a020; color: #1a2e4a; border: none;
+      padding: 10px 24px; border-radius: 6px; font-size: 15px;
+      font-weight: bold; cursor: pointer;
+    }
+    button:hover { background: #f5c842; }
+    p { color: #666; font-size: 13px; margin: 6px 0 0; }
+  </style>
+</head>
+<body>
+  <h2>Poyraz Dekorasyon — Görselleri İndir</h2>
+
+  <div class="card">
+    <h3>Logo (1200×1200 — Google Ads için)</h3>
+    <canvas id="logoCanvas" width="1200" height="1200" style="max-width:300px;"></canvas>
+    <button onclick="downloadCanvas('logoCanvas', 'poyraz-logo-1200.png')">PNG İndir</button>
+    <p>Google Ads "logo" alanına yükleyin (önerilen 1200×1200).</p>
+  </div>
+
+  <div class="card">
+    <h3>Reklam Görseli (1200×628 — yatay)</h3>
+    <canvas id="bannerCanvas" width="1200" height="628"></canvas>
+    <button onclick="downloadCanvas('bannerCanvas', 'poyraz-ads-banner.png')">PNG İndir</button>
+    <p>Google Ads "pazarlama resmi" alanı için kullanın.</p>
+  </div>
+
+  <script>
+    function loadSVGToCanvas(svgUrl, canvasId) {
+      const canvas = document.getElementById(canvasId)
+      const ctx = canvas.getContext('2d')
+      const img = new Image()
+      img.onload = () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
+      }
+      img.src = svgUrl
+    }
+
+    function downloadCanvas(canvasId, filename) {
+      const canvas = document.getElementById(canvasId)
+      const link = document.createElement('a')
+      link.download = filename
+      link.href = canvas.toDataURL('image/png')
+      link.click()
+    }
+
+    loadSVGToCanvas('/logo-1200.svg', 'logoCanvas')
+    loadSVGToCanvas('/ads-banner.svg', 'bannerCanvas')
+  </script>
+</body>
+</html>

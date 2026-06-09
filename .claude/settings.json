@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(git commit -m ' *)",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(cd /tmp)",
+      "Bash(npx playwright@1.60.0 install chromium)",
+      "Bash(find \"C:/Users/a00971389/AppData/Local/Temp\" -name \"playwright\" -maxdepth 6 -type d 2>/dev/null | head -5)",
+      "Read(//c/Users/a00971389/AppData/Local/Temp/**)",
+      "Bash(node -e ' *)",
+      "Bash(rm src/googlebecf2ecb87244073.html)",
+      "Bash(git rm *)",
+      "Bash(git commit -m 'Add Google Search Console verification file *)"
+    ]
+  }
+}

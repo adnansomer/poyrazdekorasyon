@@ -4,7 +4,7 @@ export const services = [
     title: 'Çatı Tamiratı ve İzolasyonu',
     shortTitle: 'Çatı Tamiratı',
     description:
-      'İzmir\'de binanızı nem, su sızıntısı ve ısı kayıplarından korumak için profesyonel çatı tamiratı ve izolasyon hizmetleri veriyoruz. Bornova ve tüm İzmir genelinde çatı onarımı yapılır.',
+      'Tüm İzmir ve çevresinde nem, su sızıntısı ve ısı kayıplarına karşı profesyonel çatı tamiratı ve izolasyon hizmeti veriyoruz.',
     bullets: [
       'Su yalıtımı ve nem önleme',
       'Isı izolasyonu uygulaması',
@@ -20,7 +20,7 @@ export const services = [
     title: 'Demir Doğrama',
     shortTitle: 'Demir Doğrama',
     description:
-      'İzmir Bornova\'da kapı, pencere, korkuluk, çelik kapı ve özel tasarım demir doğrama imalatı ve montajı yapıyoruz. Güvenilir, dayanıklı ve estetik demir işleri için bizi arayın.',
+      'Kapı, pencere, korkuluk, çelik kapı ve özel tasarım demir doğrama imalatı ve montajı yapıyoruz. Dayanıklı ve estetik demir işleri için bizi arayın.',
     bullets: [
       'Çelik kapı ve demir kapı yapımı',
       'Balkon ve merdiven korkuluğu',
@@ -36,7 +36,7 @@ export const services = [
     title: 'Mutfak Tadilatı',
     shortTitle: 'Mutfak',
     description:
-      'İzmir\'de komple mutfak tadilat ve yenileme hizmetleri sunuyoruz. Fayans döşemeden dolap montajına, tezgah değişiminden boya badanaya kadar mutfağınızı baştan sona yeniliyoruz.',
+      'Tüm İzmir ve çevresinde komple mutfak yenileme hizmeti sunuyoruz. Fayans, dolap montajı, tezgah değişimi ve boya dahil mutfağınızı baştan sona yeniliyoruz.',
     bullets: [
       'Komple mutfak yenileme ve tadilat',
       'Mutfak fayans ve tezgah değişimi',
@@ -52,7 +52,7 @@ export const services = [
     title: 'Ev ve İşyeri Tadilatı',
     shortTitle: 'Tadilat',
     description:
-      'İzmir Bornova\'da ev, daire ve işyeri tadilatı için komple hizmet veriyoruz. Küçük tamir ve onarımdan komple inşaat ve yenilemeye kadar tüm tadilat işlerini deneyimli ekibimizle yapıyoruz.',
+      'Küçük tamir ve onarımdan komple ev veya işyeri yenilemeye kadar her ölçekte tadilat işi yapıyoruz.',
     bullets: [
       'Komple daire, ev ve işyeri yenileme',
       'Duvar yıkım, bölme ve tamir işleri',
@@ -68,7 +68,7 @@ export const services = [
     title: 'Boya ve Badana',
     shortTitle: 'Boya Badana',
     description:
-      'İzmir Bornova\'da iç ve dış cephe boya, badana, dekoratif kaplama ve özel efekt boya uygulamaları yapıyoruz. Usta boya ekibimizle ev, daire ve işyerlerine hızlı ve kaliteli hizmet.',
+      'İç ve dış cephe boya, badana, dekoratif kaplama ve özel efekt uygulamaları yapıyoruz. Hızlı ve kaliteli sonuç garantisi.',
     bullets: [
       'İç mekan boya ve badana',
       'Dış cephe boya uygulaması',
@@ -84,7 +84,7 @@ export const services = [
     title: 'Alçı, Sıva ve Tavan İşleri',
     shortTitle: 'Alçı & Sıva',
     description:
-      'İzmir\'de düzgün ve pürüzsüz yüzeyler için alçı sıva, alçı levha (drywall) montajı ve dekoratif alçı uygulamaları yapıyoruz. Tavan ve duvar sıva işleri Bornova dahil tüm İzmir\'de.',
+      'Tüm İzmir ve çevresinde alçı sıva, drywall montajı ve dekoratif alçı uygulamaları yapıyoruz. Pürüzsüz ve uzun ömürlü yüzeyler için bizi arayın.',
     bullets: [
       'Alçı sıva ve perdah uygulaması',
       'Alçı levha (drywall) montajı',
@@ -100,7 +100,7 @@ export const services = [
     title: 'Asma Tavan ve Tavan Dekorasyon',
     shortTitle: 'Asma Tavan',
     description:
-      'İzmir Bornova\'da modern asma tavan ve tavan dekorasyon sistemleri kuruyoruz. Alçıpan tavan, LED aydınlatma entegrasyonu ve özel tasarım tavanlarla mekanlarınıza şıklık katıyoruz.',
+      'Alçıpan asma tavan, LED aydınlatma entegrasyonu ve özel tasarım tavanlarla mekanlarınıza şıklık katıyoruz.',
     bullets: [
       'Alçıpan asma tavan sistemleri',
       'LED ve spot aydınlatma entegrasyonu',
@@ -116,7 +116,7 @@ export const services = [
     title: 'Su Tesisatı',
     shortTitle: 'Su Tesisatı',
     description:
-      'İzmir Bornova\'da konut ve işyerlerinde su tesisatı döşeme, onarım ve yenileme işleri yapıyoruz. Tesisat kaçak tespiti, tamir ve yeni boru döşeme işleri usta ekibimizle gerçekleştirilir.',
+      'Konut ve işyerlerinde su tesisatı döşeme, kaçak tespiti, onarım ve yenileme işleri usta ekibimizle gerçekleştirilir.',
     bullets: [
       'Sıhhi tesisat kurulum ve yenileme',
       'Pis su ve temiz su borulaması',
@@ -132,7 +132,7 @@ export const services = [
     title: 'Banyo ve Tuvalet Yapımı',
     shortTitle: 'Banyo Yapımı',
     description:
-      'İzmir\'de sıfırdan banyo ve tuvalet yapımı ile mevcut banyoların komple yenilenmesi için hizmet veriyoruz. Fayans döşeme, tesisat ve tüm banyo işleri tek ekip tarafından yapılır.',
+      'Tüm İzmir ve çevresinde sıfırdan banyo yapımı ve komple banyo yenileme hizmeti veriyoruz. Fayans, tesisat ve montaj tek ekipten.',
     bullets: [
       'Komple banyo yenileme ve yapımı',
       'Tuvalet ve duşakabin montajı',

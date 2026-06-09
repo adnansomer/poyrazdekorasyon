@@ -1,12 +1,17 @@
+import { useNavigate } from 'react-router-dom'
+
 export default function FloatingCall() {
-  const handleCall = () => {
-    window.location.href = 'tel:+905452096557'
+  const navigate = useNavigate()
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    navigate('/iletisim')
   }
 
   return (
     <a
-      href="tel:+905452096557"
-      onClick={handleCall}
+      href="/iletisim"
+      onClick={handleClick}
       className="floating-call"
       aria-label="Hemen Arayın"
     >

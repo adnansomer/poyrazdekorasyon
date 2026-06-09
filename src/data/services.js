@@ -1,5 +1,21 @@
 export const services = [
   {
+    id: 'fayans',
+    title: 'Fayans ve Seramik Döşeme',
+    shortTitle: 'Fayans & Seramik',
+    description:
+      'İzmir ve çevresinde her türlü iç ve dış mekân fayans, seramik ve yer kaplaması döşeme hizmeti veriyoruz. Banyo, mutfak, teras ve dış cephede usta işçilikle kalıcı sonuçlar.',
+    bullets: [
+      'Banyo ve mutfak fayans döşeme',
+      'Yer ve duvar seramiği uygulaması',
+      'Teras ve balkon fayans döşeme',
+      'Derz dolgu, silikon ve son rötuş',
+    ],
+    image:
+      'https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=800&q=80',
+    alt: 'İzmir fayans ve seramik döşeme ustası',
+  },
+  {
     id: 'cati',
     title: 'Çatı Tamiratı ve İzolasyonu',
     shortTitle: 'Çatı Tamiratı',

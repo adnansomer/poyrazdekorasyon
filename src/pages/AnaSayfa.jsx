@@ -1,9 +1,57 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import SectionTitle from '../components/SectionTitle'
 import ServiceCard from '../components/ServiceCard'
 import { services, whyUs } from '../data/services'
 import usePageMeta from '../hooks/usePageMeta'
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'İzmir\'de ücretsiz keşif yapıyor musunuz?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Evet, İzmir ve tüm çevre illerde ücretsiz keşif hizmeti sunuyoruz. Uzman ekibimiz projenizi yerinde değerlendirerek aynı gün fiyat teklifi hazırlar. 0545 209 65 57 numarasını arayabilirsiniz.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Tadilat fiyatları ne kadar?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Tadilat fiyatları projenin kapsamına, kullanılacak malzemelere ve çalışma alanına göre değişir. Doğru fiyat için ücretsiz keşif randevusu oluşturmanızı öneririz. 0545 209 65 57 veya 0506 178 31 49 numaralarımızdan bize ulaşabilirsiniz.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Hangi bölgelere hizmet veriyorsunuz?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'İzmir\'in tüm ilçelerine (Bornova, Karşıyaka, Buca, Konak, Çiğli, Bayraklı, Gaziemir, Narlıdere, Balçova) ve Türkiye\'nin tüm şehirlerine hizmet veriyoruz.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Yapılan işler garantili mi?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Evet, tüm işlerimiz garantilidir. Teslim sonrası oluşan sorunlarda ekibimiz geri gelir ve gerekli düzeltmeleri yapar.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Fayans döşeme ve banyo tadilatı yapıyor musunuz?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Evet, fayans ve seramik döşeme ile komple banyo yenileme hizmetlerimiz bulunmaktadır. Tesisat, fayans ve montaj işlemlerini tek ekipten alabilirsiniz.',
+      },
+    },
+  ],
+}
 
 const WhyIcons = {
   quality: (
@@ -48,6 +96,18 @@ export default function AnaSayfa() {
     'Poyraz Dekorasyon | İzmir Tadilat, İnşaat ve Dekorasyon Hizmetleri',
     'İzmir ve çevresinde tadilat, inşaat, dekorasyon hizmetleri. Bornova merkezli Poyraz Dekorasyon — fayans, çatı tamiratı, boya badana, alçı, mutfak-banyo tadilatı, su tesisatı, demir doğrama. Ücretsiz keşif: 0545 209 65 57'
   )
+
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.id = 'faq-schema'
+    script.type = 'application/ld+json'
+    script.textContent = JSON.stringify(faqSchema)
+    document.head.appendChild(script)
+    return () => {
+      const el = document.getElementById('faq-schema')
+      if (el) el.remove()
+    }
+  }, [])
   return (
     <>
       <Hero />
